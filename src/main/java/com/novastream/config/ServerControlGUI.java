@@ -94,6 +94,13 @@ public class ServerControlGUI extends Application {
     splashStage.setScene(splashScene);
     splashStage.setAlwaysOnTop(true);
     splashStage.centerOnScreen();
+    splashStage
+      .getIcons()
+      .add(
+        new Image(
+          ServerControlGUI.class.getResourceAsStream("/static/icon.png")
+        )
+      );
     splashStage.show();
 
     CompletableFuture
@@ -134,6 +141,9 @@ public class ServerControlGUI extends Application {
 
     primaryStage.setScene(scene);
     primaryStage.setTitle("NovaStream");
+    primaryStage
+      .getIcons()
+      .add(new Image(getClass().getResourceAsStream("/static/icon.png")));
     primaryStage.show();
     animateStartup(primaryStage);
 
