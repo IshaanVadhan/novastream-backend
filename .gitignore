@@ -3,6 +3,9 @@ target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
+launcher/
+javafx-jmods-21/
+runtime/
 /Novastream/
 dependency-reduced-pom.xml
 tempCodeRunnerFile.*
